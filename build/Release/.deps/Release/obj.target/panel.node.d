@@ -1,0 +1,1 @@
+cmd_Release/obj.target/panel.node := g++ -shared -pthread -rdynamic  -Wl,-soname=panel.node -o Release/obj.target/panel.node -Wl,--start-group Release/obj.target/panel/src/panel.o Release/obj.target/panel/src/gpio.o -Wl,--end-group 
