@@ -85,48 +85,6 @@ var setupShepherd = function () {
                     shepherd.back();
                 }
             }, {
-                text: lang.next,
-                action: function () {
-                    shepherd.next();
-                },
-                classes: 'shepherd-button-example-primary'
-            }
-        ]
-    });
-    
-    shepherd.addStep('shep_sensors', { 
-        text: [lang.sensors],
-        attachTo: 'div#sensors top',
-        classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
-        buttons: [
-            {
-                text: lang.previous,
-                classes: 'shepherd-button-secondary',
-                action: function () {
-                    shepherd.back();
-                }
-            }, {
-                text: lang.next,
-                action: function () {
-                    shepherd.next();
-                },
-                classes: 'shepherd-button-example-primary'
-            }
-        ]
-    });
-    // Finaliza Tour
-    
-    shepherd.addStep('shep_report', { 
-        text: [lang.report],
-        classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
-        buttons: [
-            {
-                text: lang.previous,
-                classes: 'shepherd-button-secondary',
-                action: function () {
-                    shepherd.back();
-                }
-            }, {
                 text: lang.done,
                 action: function () {
                     shepherd.cancel();
@@ -136,6 +94,7 @@ var setupShepherd = function () {
         ]
     });
     
+        
     shepherd.on('cancel', function () {
 
     });
